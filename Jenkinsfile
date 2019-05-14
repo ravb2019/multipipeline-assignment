@@ -5,7 +5,6 @@ node {
         git 'https://github.com/ravb2019/multipipeline-assignment.git'
     }
 
-    dir('Lesson5/ActivityA') {
         stage("Install Requirements") {
             sh 'make install'
         }
@@ -21,7 +20,6 @@ node {
                 printMessage("Not deployed to production.")
             }
         }
-    }
 
     printMessage("Pipeline End")
 }
