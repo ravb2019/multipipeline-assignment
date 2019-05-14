@@ -10,7 +10,7 @@ node {
         }
 
         stage("Run Tests") {
-            sh 'make test'
+            sh 'make jenkins_test'
         }
 
         stage("Deploy") {
